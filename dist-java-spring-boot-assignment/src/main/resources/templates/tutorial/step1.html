@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Step 1 | Tutorial Guide</title>
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+    <div th:replace="~{fragments/common :: header}"></div>
+
+    <main>
+        <section class="step-card">
+            <h1>Step 1: Create the Project</h1>
+            <p>Start by creating a new Spring Boot project in IntelliJ or your IDE of choice. Use the Spring Initializr setup and include the Web and Thymeleaf dependencies.</p>
+            <ol>
+                <li>Open IntelliJ and create a new Spring Boot project.</li>
+                <li>Select Maven and Java.</li>
+                <li>Add the Spring Web and Thymeleaf starter dependencies.</li>
+                <li>Generate the project and open it in your editor.</li>
+            </ol>
+            <div class="image-panel">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80" alt="Development workspace with code on a laptop">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Software development tools on a desk">
+            </div>
+            <div class="button-row">
+                <a class="btn" th:href="@{/tutorial/step-2}">Next Step</a>
+                <a class="btn secondary" th:href="@{/}">Back Home</a>
+            </div>
+            <p class="credit">Image credit: Unsplash, used for educational demonstration.</p>
+        </section>
+    </main>
+
+    <div th:replace="~{fragments/common :: footer}"></div>
+</body>
+</html>

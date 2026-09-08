@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle} ?: 'Tutorial Guide'">Tutorial Guide</title>
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="top-nav">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/tutorial/step-1}">Step 1</a>
+            <a th:href="@{/tutorial/step-2}">Step 2</a>
+            <a th:href="@{/tutorial/step-3}">Step 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <div th:fragment="content"></div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Created for a Spring Boot tutorial and inspired by beginner-friendly web design.</p>
+    </footer>
+</body>
+</html>

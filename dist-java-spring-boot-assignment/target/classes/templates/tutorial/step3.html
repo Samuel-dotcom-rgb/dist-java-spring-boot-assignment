@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Step 3 | Tutorial Guide</title>
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+    <div th:replace="~{fragments/common :: header}"></div>
+
+    <main>
+        <section class="step-card">
+            <h1>Step 3: Style and Publish</h1>
+            <p>Finish by linking a custom stylesheet, using Thymeleaf URL expressions for every internal link, and making the site easy to navigate.</p>
+            <ol>
+                <li>Add a stylesheet in the static folder.</li>
+                <li>Use Thymeleaf links such as <strong>th:href="@{/tutorial/step-2}"</strong>.</li>
+                <li>Keep your design consistent from page to page.</li>
+            </ol>
+            <div class="image-panel">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=900&q=80" alt="Website design and planning layout">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Team reviewing website content">
+            </div>
+            <div class="button-row">
+                <a class="btn" th:href="@{/}">Return Home</a>
+                <a class="btn secondary" th:href="@{/tutorial/step-2}">Previous Step</a>
+            </div>
+            <p class="credit">Image credit: Unsplash, used for educational demonstration.</p>
+        </section>
+    </main>
+
+    <div th:replace="~{fragments/common :: footer}"></div>
+</body>
+</html>

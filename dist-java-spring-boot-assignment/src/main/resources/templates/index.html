@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Tutorial Guide</title>
+    <link rel="stylesheet" th:href="@{/css/site.css}">
+</head>
+<body>
+    <div th:replace="~{fragments/common :: header}"></div>
+
+    <main>
+        <section class="hero">
+            <h1>How to Build a Simple Spring Boot Tutorial Site</h1>
+            <p>This short 3-step guide explains how to create a simple, organized learning site using Spring Boot, Thymeleaf, and a consistent design.</p>
+            <div class="button-row">
+                <a class="btn" th:href="@{/tutorial/step-1}">Start Tutorial</a>
+                <a class="btn secondary" th:href="@{/tutorial/step-3}">Jump to Final Step</a>
+            </div>
+        </section>
+
+        <section class="info-card">
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li>How to create a Spring Boot controller for each page</li>
+                <li>How to use Thymeleaf links and templates</li>
+                <li>How to organize content across a step-by-step tutorial</li>
+            </ul>
+            <div class="image-panel">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Laptop and software development workspace">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Students working together on a project">
+            </div>
+            <p class="credit">Image credit: Unsplash, used for educational demo purposes.</p>
+        </section>
+    </main>
+
+    <div th:replace="~{fragments/common :: footer}"></div>
+</body>
+</html>
